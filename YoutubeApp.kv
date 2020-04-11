@@ -1,0 +1,30 @@
+YoutubeDownloader:
+<YoutubeDownloader>:
+
+    youtubeurl: youtubeurl
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 50
+        padding: 200
+        Label:
+            text: "Youtube URL"
+            size_hint_y: None
+        TextInput:
+            id: youtubeurl
+            size_hint_y: None
+            height: "50dp"
+            size_hint_x: None
+            width:  "400dp"
+            pos_hint: {'center_x' : .5}
+        Button:
+            text: "Download"
+            height: "50dp"
+            size_hint_y: None
+            size_hint_x: None
+            width:  "100dp"
+            pos_hint: {'center_x' : .5}
+            on_press: root.Downloader()
+
+        
+        
